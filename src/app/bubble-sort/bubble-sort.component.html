@@ -1,0 +1,3 @@
+<app-sort (sort)="bubbleSort()" (generateNewNumbers)="generateNewNumbers()">
+    <div *ngFor="let number of numbers" [@elementState]="elementState(number)" class="bar" [style.height.px]="number*10"></div>
+</app-sort>

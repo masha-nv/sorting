@@ -1,0 +1,14 @@
+<!-- Display the data array as a list of elements -->
+<div class="visualizer">
+    <div class="array-container">
+        <div class="array-element" *ngFor="let value of data; index as i" [style.backgroundColor]="i === pivotIdx ? 'green' : 'lightblue'" [style.scale]="value/10">{{value}}</div>
+    </div>
+</div>
+
+  
+  <!-- Add a button to trigger the sorting process -->
+  <div class="action-buttons">
+    <button (click)="sort()">Sort</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+  

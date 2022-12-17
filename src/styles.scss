@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: sans-serif;
+}
+button.btn {
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: rgb(13, 45, 56);
+    margin: 1rem .3rem;
+    padding: .4rem 1rem;
+}

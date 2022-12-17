@@ -1,0 +1,6 @@
+<app-sort (sort)="sort()" (generateNewNumbers)="generateNewNumbers()">
+
+    <div class="container">
+        <div class="height" *ngFor="let height of numbers" [style.height.px]="height*10" [ngClass]="setClassForNumber(height)"></div>
+    </div>
+</app-sort>

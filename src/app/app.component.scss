@@ -1,0 +1,17 @@
+.menu {
+    display: flex;
+    gap: 3rem;
+    li {
+        list-style: none;
+        transition: scale .3s;
+        a {
+            text-decoration: none;
+            &:visited {
+                color: inherit;
+            }
+        }
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
